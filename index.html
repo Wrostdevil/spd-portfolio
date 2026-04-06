@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shakti Prosad Dey | Software Engineer</title>
+<meta name="description" content="Portfolio of Shakti Prosad Dey - B.Tech IT @ NIT Jalandhar | Full-Stack Developer | AI/ML Enthusiast">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200;300;400;500;700;800&family=JetBrains+Mono:wght@200;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-name" id="loader-name"></div>
+  <div class="loader-bar"><div class="loader-fill" id="loader-fill"></div></div>
+  <div class="loader-pct" id="loader-pct">0%</div>
+</div>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAVBAR - ENHANCED VISIBILITY -->
+<nav>
+  <div class="nav-logo magnetic">SPD</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" class="active">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact-form">Contact</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas class="hero-canvas" id="heroCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow">B.Tech IT · NIT Jalandhar · 2027</div>
+      <h1 class="hero-title">
+        <span class="outline" id="typed-title"></span><br>
+        PROSAD<br>
+        <span class="lime">DEY.</span>
+      </h1>
+    </div>
+    <div class="hero-right">
+      <p class="hero-desc">Aspiring <strong>Software Development Engineer</strong> building scalable systems, elegant APIs, and AI-powered applications that solve real problems.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-mag magnetic">View My Work <span class="arr">↗</span></a>
+        <a href="https://github.com/Wrostdevil" target="_blank" class="btn-ghost magnetic">GitHub Profile <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span class="scroll-text">Scroll to explore</span>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-inner" id="marquee">
+    <span class="marquee-item"><span class="marquee-dot"></span>Full-Stack Developer</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>NIT Jalandhar</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>200+ DSA Problems</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Oracle Cloud Certified</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>ICCR Scholar</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Open to Opportunities</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Full-Stack Developer</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>NIT Jalandhar</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>200+ DSA Problems</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Oracle Cloud Certified</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>ICCR Scholar</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Open to Opportunities</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stat-bar">
+  <div class="stat-item">
+    <div class="stat-num"><span class="count-up" data-target="200">0</span><span class="stat-accent">+</span></div>
+    <div class="stat-label">DSA Problems Solved</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num"><span class="count-up" data-target="6">0</span></div>
+    <div class="stat-label">Major Projects</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num"><span class="count-up" data-target="2">0</span></div>
+    <div class="stat-label">Internships</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num"><span class="count-up" data-target="2027">0</span></div>
+    <div class="stat-label">Graduating</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="about" id="about">
+  <div class="about-left">
+    <div class="about-left-top">
+      <div class="about-num">01</div>
+      <div class="about-label">Who<br>I Am</div>
+      <p class="about-text">
+        I'm a <strong>third-year IT student</strong> at Dr. B.R. Ambedkar NIT Jalandhar — one of India's premier technical institutions. I build things that live on the internet: full-stack platforms, AI pipelines, scalable APIs.<br><br>
+        My edge? I think like an <strong>engineer and a product designer</strong>. I don't just write code — I design systems. I ask "why?" before I ask "how?".<br><br>
+        Originally from <strong>Chattogram, Bangladesh</strong>. Currently in Jalandhar, Punjab, building the next thing.
+      </p>
+    </div>
+    <div style="margin-top:40px">
+      <div style="font-family:var(--ff-mono);font-size:10px;color:rgba(255,255,255,0.25);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:12px">Currently studying</div>
+      <div style="font-family:var(--ff-display);font-size:20px;color:#fff;letter-spacing:0.05em">B.TECH INFORMATION TECHNOLOGY</div>
+      <div style="font-family:var(--ff-mono);font-size:12px;color:rgba(255,255,255,0.35);margin-top:4px">2023 — 2027</div>
+    </div>
+  </div>
+  <div class="about-right">
+    <div style="font-family:var(--ff-mono);font-size:10px;color:var(--muted);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:32px">Highlights</div>
+    <div class="about-card reveal">
+      <div class="about-card-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm285 93q35-35 35-85v-240H360v240q0 50 35 85t85 35q50 0 85-35Zm115-93q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg></div>
+      <div class="about-card-info">
+        <h4>ICCR Scholarship Holder</h4>
+        <p>Indian Council for Cultural Relations · 2023</p>
+      </div>
+    </div>
+    <div class="about-card reveal">
+      <div class="about-card-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M260-160q-91 0-155.5-63T40-377q0-78 47-139t123-78q25-92 100-149t170-57q117 0 198.5 81.5T760-520q69 8 114.5 59.5T920-340q0 75-52.5 127.5T740-160H260Zm0-80h480q42 0 71-29t29-71q0-42-29-71t-71-29h-60v-80q0-83-58.5-141.5T480-720q-83 0-141.5 58.5T280-520h-20q-58 0-99 41t-41 99q0 58 41 99t99 41Zm220-240Z"/></svg></div>
+      <div class="about-card-info">
+        <h4>Oracle Cloud Certified</h4>
+        <p>OCI 2025 AI Foundations Associate · Oct 2025</p>
+      </div>
+    </div>
+    <div class="about-card reveal">
+      <div class="about-card-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg></div>
+      <div class="about-card-info">
+        <h4>500+ LeetCode / CodeChef</h4>
+        <p>Data Structures & Algorithms · ongoing</p>
+      </div>
+    </div>
+    <div class="about-card reveal">
+      <div class="about-card-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M380-360q42 0 71-29l160-160q29-29 29-71t-29-71q-29-29-71-29t-71 29q-37-13-73-6t-61 32q-25 25-32 61t6 73q-29 29-29 71t29 71q29 29 71 29ZM240-80v-172q-57-52-88.5-121.5T120-520q0-150 105-255t255-105q125 0 221.5 73.5T827-615l52 205q5 19-7 34.5T840-360h-80v120q0 33-23.5 56.5T680-160h-80v80h-80v-160h160v-200h108l-38-155q-23-91-98-148t-172-57q-116 0-198 81t-82 197q0 60 24.5 114t69.5 96l26 24v208h-80Zm254-360Z"/></svg></div>
+      <div class="about-card-info">
+        <h4>AI / ML Certified</h4>
+        <p>Fundamentals in AI & Machine Learning</p>
+      </div>
+    </div>
+    <div class="about-card reveal" style="border-bottom:none">
+      <div class="about-card-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-800 243-663l237 137 237-137-237-137ZM120-321v-318q0-22 10.5-40t29.5-29l280-161q10-5 19.5-8t20.5-3q11 0 21 3t19 8l280 161q19 11 29.5 29t10.5 40v159h-80v-116L479-434 200-596v274l240 139v92L160-252q-19-11-29.5-29T120-321ZM720-80q8 0 14-6t6-14q0-8-6-14t-14-6q-8 0-14 6t-6 14q0 8 6 14t14 6Zm-20-80h40v-160h-40v160ZM578.5-58.5Q520-117 520-200t58.5-141.5Q637-400 720-400t141.5 58.5Q920-283 920-200T861.5-58.5Q803 0 720 0T578.5-58.5ZM480-491Z"/></svg></div>
+      <div class="about-card-info">
+        <h4>Web Development Certified</h4>
+        <p>Full-stack web development program</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <div class="skills-header reveal">
+    <div class="skills-title">TECH<br>STACK</div>
+    <div class="skills-note">Hover for proficiency · Filter by category</div>
+  </div>
+  <div class="skills-filter reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="lang">Languages</button>
+    <button class="filter-btn" data-filter="front">Frontend</button>
+    <button class="filter-btn" data-filter="back">Backend</button>
+    <button class="filter-btn" data-filter="db">Database</button>
+    <button class="filter-btn" data-filter="cloud">Cloud & Tools</button>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-card" data-cat="lang"><div class="skill-radial" style="--progress:90"><span>90%</span></div><div class="skill-name">Python</div></div>
+    <div class="skill-card" data-cat="lang"><div class="skill-radial" style="--progress:85"><span>85%</span></div><div class="skill-name">JavaScript</div></div>
+    <div class="skill-card" data-cat="lang"><div class="skill-radial" style="--progress:80"><span>80%</span></div><div class="skill-name">TypeScript</div></div>
+    <div class="skill-card" data-cat="lang"><div class="skill-radial" style="--progress:75"><span>75%</span></div><div class="skill-name">C++</div></div>
+    <div class="skill-card" data-cat="lang"><div class="skill-radial" style="--progress:70"><span>70%</span></div><div class="skill-name">Java</div></div>
+    <div class="skill-card" data-cat="lang"><div class="skill-radial" style="--progress:70"><span>70%</span></div><div class="skill-name">SQL</div></div>
+    <div class="skill-card" data-cat="front"><div class="skill-radial" style="--progress:88"><span>88%</span></div><div class="skill-name">React.js</div></div>
+    <div class="skill-card" data-cat="front"><div class="skill-radial" style="--progress:82"><span>82%</span></div><div class="skill-name">Next.js</div></div>
+    <div class="skill-card" data-cat="front"><div class="skill-radial" style="--progress:90"><span>90%</span></div><div class="skill-name">Tailwind CSS</div></div>
+    <div class="skill-card" data-cat="back"><div class="skill-radial" style="--progress:85"><span>85%</span></div><div class="skill-name">Node.js</div></div>
+    <div class="skill-card" data-cat="back"><div class="skill-radial" style="--progress:80"><span>80%</span></div><div class="skill-name">Express.js</div></div>
+    <div class="skill-card" data-cat="back"><div class="skill-radial" style="--progress:78"><span>78%</span></div><div class="skill-name">FastAPI</div></div>
+    <div class="skill-card" data-cat="db"><div class="skill-radial" style="--progress:75"><span>75%</span></div><div class="skill-name">MongoDB</div></div>
+    <div class="skill-card" data-cat="db"><div class="skill-radial" style="--progress:72"><span>72%</span></div><div class="skill-name">PostgreSQL</div></div>
+    <div class="skill-card" data-cat="cloud"><div class="skill-radial" style="--progress:70"><span>70%</span></div><div class="skill-name">AWS</div></div>
+    <div class="skill-card" data-cat="cloud"><div class="skill-radial" style="--progress:85"><span>85%</span></div><div class="skill-name">Git/GitHub</div></div>
+    <div class="skill-card" data-cat="cloud"><div class="skill-radial" style="--progress:80"><span>80%</span></div><div class="skill-name">Vercel</div></div>
+  </div>
+</section>
+
+<!-- PROJECTS - WITH MORE PROJECTS & FIXED SPREADVISION -->
+<section class="projects" id="projects">
+  <div class="projects-header reveal">
+    <div class="projects-label">Featured Work</div>
+    <div class="projects-title">WHAT I'VE<br><span style="color:var(--lime)">BUILT</span></div>
+  </div>
+
+  <!-- Project 1: SpreadVision.ai - FIXED & ENHANCED -->
+  <div class="project-row proj-featured glass-card reveal">
+    <div class="proj-index">01</div>
+    <div class="proj-main">
+      <div class="proj-date">Mar 2026 · AI/ML · Featured</div>
+      <div class="proj-name">SpreadVision.ai</div>
+      <div class="proj-tags">
+        <span class="proj-tag">Next.js</span>
+        <span class="proj-tag">FastAPI</span>
+        <span class="proj-tag">XGBoost</span>
+        <span class="proj-tag">Healthcare AI</span>
+      </div>
+      <div class="project-meta">
+        <a href="https://spreadvision-ai.vercel.app" target="_blank" class="github-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          Live Demo
+        </a>
+        <a href="https://github.com/Wrostdevil/Spreadvision-ai" target="_blank" class="github-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="proj-desc">AI-powered epidemic prediction system using climate & epidemiological data. Features 14-day forecasting, real-time risk API, and interactive what-if simulator for public health decision-making. <strong style="color:var(--lime)">Featured Project</strong></div>
+    <div class="proj-arrow">↗</div>
+  </div>
+ <!-- Project 2: PathoScan - NEW -->
+  <div class="project-row glass-card reveal">
+    <div class="proj-index">02</div>
+    <div class="proj-main">
+      <div class="proj-date">March 2026 · DevTools</div>
+      <div class="proj-name">PathoScan</div>
+      <div class="proj-tags">
+        <span class="proj-tag">React</span>
+        <span class="proj-tag">Prism.js</span>
+        <span class="proj-tag">XGBoost</span>
+        <span class="proj-tag">Uvicorn</span>
+        <span class="proj-tag">TailwindCSS</span>
+      </div>
+      <div class="project-meta">
+        <a href="https://pathoscan-zeta.vercel.app/" target="_blank" class="github-badge">Live Demo</a>
+        <a href="https://github.com/Wrostdevil/PathoScan" target="_blank" class="github-badge">GitHub</a>
+      </div>
+    </div>
+    <div class="proj-desc">PathoScan is a full-stack AI system that predicts whether a genetic variant is Pathogenic or Benignand explains predictions using SHAP (Explainable AI).IT generates clinical insights using Gemini AI and provides an intuitive web-based interface for researchers and clinicians</div>
+    <div class="proj-arrow">↗</div>
+  </div>
+  <!-- Project 3: TalknCode -->
+  <div class="project-row glass-card reveal">
+    <div class="proj-index">03</div>
+    <div class="proj-main">
+      <div class="proj-date">Feb 2026 · SaaS</div>
+      <div class="proj-name">TalknCode</div>
+      <div class="proj-tags">
+        <span class="proj-tag">Next.js 14</span>
+        <span class="proj-tag">Convex</span>
+        <span class="proj-tag">TypeScript</span>
+        <span class="proj-tag">Real-time</span>
+      </div>
+      <div class="project-meta">
+        <a href="https://talkncode.vercel.app" target="_blank" class="github-badge">Live Demo</a>
+        <a href="https://github.com/Wrostdevil/Talkncode" target="_blank" class="github-badge">GitHub</a>
+      </div>
+    </div>
+    <div class="proj-desc">Scalable technical interview platform with synchronized multi-language code editor, HD video calling, invigilator controls, and session recordings. Built for fair, efficient remote hiring.</div>
+    <div class="proj-arrow">↗</div>
+  </div>
+
+  <!-- Project 3: AgrowneX -->
+  <div class="project-row glass-card reveal">
+    <div class="proj-index">04</div>
+    <div class="proj-main">
+      <div class="proj-date">Dec 2025 · AgriTech</div>
+      <div class="proj-name">AgrowneX</div>
+      <div class="proj-tags">
+        <span class="proj-tag">React 18</span>
+        <span class="proj-tag">Express</span>
+        <span class="proj-tag">Open-Meteo</span>
+        <span class="proj-tag">Gemini AI</span>
+      </div>
+      <div class="project-meta">
+        <a href="https://agrowneX.vercel.app" target="_blank" class="github-badge">Live Demo</a>
+        <a href="https://github.com/Wrostdevil/Minor-Project-AgriSure" target="_blank" class="github-badge">GitHub</a>
+      </div>
+    </div>
+    <div class="proj-desc">AI-driven agricultural insurance platform with real-time weather analytics, geolocation-based risk assessment, voice-enabled AI assistant, and interactive quote calculator.</div>
+    <div class="proj-arrow">↗</div>
+  </div>
+
+  <!-- Project 4: SwasthFit -->
+  <div class="project-row glass-card reveal">
+    <div class="proj-index">05</div>
+    <div class="proj-main">
+      <div class="proj-date">Mar 2026 · HealthTech</div>
+      <div class="proj-name">SwasthFit</div>
+      <div class="proj-tags">
+        <span class="proj-tag">Python</span>
+        <span class="proj-tag">MediaPipe</span>
+        <span class="proj-tag">Streamlit</span>
+        <span class="proj-tag">Computer Vision</span>
+      </div>
+      <div class="project-meta">
+         <a href=" https://swasthfit.onrender.com/" target="_blank" class="github-badge">Live Demo</a>
+        <a href="https://github.com/Wrostdevil/SwasthFit" target="_blank" class="github-badge">GitHub</a>
+      </div>
+    </div>
+    <div class="proj-desc">AI-powered physiotherapy coach using pose estimation. Provides real-time form correction, progress tracking, and personalized exercise reports via computer vision analysis.</div>
+    <div class="proj-arrow">↗</div>
+  </div>
+
+ 
+
+  <!-- Project 6: Business_improvement_retail_comapany - NEW -->
+  <div class="project-row glass-card reveal">
+    <div class="proj-index">06</div>
+    <div class="proj-main">
+      <div class="proj-date">Nov 2025 · Data Analysis</div>
+      <div class="proj-name">Business Analytics</div>
+      <div class="proj-tags">
+        <span class="proj-tag">Next.js</span>
+        <span class="proj-tag">Supabase</span>
+        <span class="proj-tag">Markdown</span>
+        <span class="proj-tag">PWA</span>
+      </div>
+      <div class="project-meta">
+        <a href="https://github.com/Wrostdevil/Business_improvement_retail_comapany.git" target="_blank" class="github-badge">Prject Trial</a>
+        <a href="https://github.com/Wrostdevil/Business_improvement_retail_comapany" target="_blank" class="github-badge">GitHub</a>
+      </div>
+    </div>
+    <div class="proj-desc"> End-to-End Retail Analytics (Python | SQL | Power BI).This repository showcases an industry-standard workflow, converting raw retail data into actionable insights to improve business operations and the customer experience.</div>
+    <div class="proj-arrow">↗</div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+  <div class="exp-header">
+    <div class="exp-title reveal">WHERE<br>I'VE<br>WORKED</div>
+    <div class="exp-intro reveal">Two internships building real products in production environments — sharpening my craft across the full stack.</div>
+  </div>
+  <div class="exp-timeline">
+    <div class="exp-entry reveal">
+      <div class="exp-time-col">
+        <div class="exp-period">Jul – Aug 2025</div>
+        <div class="exp-company-name">Skillcraft Technologies</div>
+      </div>
+      <div class="exp-line-col">
+        <div class="exp-dot"></div>
+        <div class="exp-vert"></div>
+      </div>
+      <div class="exp-content-col">
+        <div class="exp-role">Web Development Intern</div>
+        <ul class="exp-bullets">
+          <li>Built responsive web applications using modern JavaScript frameworks</li>
+          <li>Collaborated in a structured team environment following agile practices</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-entry reveal">
+      <div class="exp-time-col">
+        <div class="exp-period">Jun – Jul 2025</div>
+        <div class="exp-company-name">Ad Infocom Systems</div>
+      </div>
+      <div class="exp-line-col">
+        <div class="exp-dot"></div>
+        <div class="exp-vert" style="display:none"></div>
+      </div>
+      <div class="exp-content-col" style="padding-bottom:0">
+        <div class="exp-role">Frontend Web Developer Intern</div>
+        <ul class="exp-bullets">
+          <li>Developed full-stack web applications including e-commerce platforms and interactive tools</li>
+          <li>Designed and implemented RESTful APIs using Node.js and Express</li>
+          <li>Improved frontend responsiveness and optimized backend logic</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="testimonials-header reveal">
+    <div class="testimonials-sub">04 — Feedback</div>
+    <div class="testimonials-title">WHAT PEOPLE<br>SAY</div>
+  </div>
+  <div class="testimonial-track reveal">
+    <div class="testimonial-card glass-card">
+      <p class="testimonial-quote">Shakti delivered exceptional work on our AI project. His ability to bridge technical complexity with clear communication made collaboration seamless.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">AC</div>
+        <div><div class="testimonial-name">Anmol Chowdhury</div><div class="testimonial-role">SDE</div></div>
+      </div>
+    </div>
+    <div class="testimonial-card glass-card">
+      <p class="testimonial-quote">A rare talent who thinks like both an engineer and a product designer. Shakti's solutions are elegant, scalable, and user-focused.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">PK</div>
+        <div><div class="testimonial-name">Pankaj Kumar Jaiswal</div><div class="testimonial-role">Product Manager</div></div>
+      </div>
+    </div>
+    <div class="testimonial-card glass-card">
+      <p class="testimonial-quote">Impressive problem-solving skills and dedication. Shakti consistently exceeded expectations during his internship with us.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">MA</div>
+        <div><div class="testimonial-name">Mohammad Aslam Hussain</div><div class="testimonial-role">Aspiring Software Engineer</div></div>
+      </div>
+    </div>
+
+    
+  </div>
+  
+</section>
+
+<!-- TOOLS ORBIT -->
+<section class="tools-section">
+  <div class="tools-left reveal">
+    <div class="tools-label">05 — Tools & Concepts</div>
+    <div class="tools-title">ALWAYS<br>LEARNING</div>
+    <p class="tools-desc">Beyond the stack — the concepts and principles that shape how I think about software. System design, distributed systems, cloud computing, AI/ML fundamentals.</p>
+    <div style="margin-top:32px;display:flex;flex-direction:column;gap:10px">
+      <div style="font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,0.4);display:flex;gap:12px;align-items:center"><span style="color:var(--lime)">✓</span> Data Structures & Algorithms</div>
+      <div style="font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,0.4);display:flex;gap:12px;align-items:center"><span style="color:var(--lime)">✓</span> System Design & Architecture</div>
+      <div style="font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,0.4);display:flex;gap:12px;align-items:center"><span style="color:var(--lime)">✓</span> OOP & Design Patterns</div>
+      <div style="font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,0.4);display:flex;gap:12px;align-items:center"><span style="color:var(--lime)">✓</span> DBMS & Query Optimization</div>
+      <div style="font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,0.4);display:flex;gap:12px;align-items:center"><span style="color:var(--lime)">✓</span> Networking & OS Fundamentals</div>
+      <div style="font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,0.4);display:flex;gap:12px;align-items:center"><span style="color:var(--lime)">✓</span> Distributed Systems</div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;justify-content:center">
+    <div class="orbit-container">
+      <div class="orbit-center">CORE</div>
+      <div class="orbit-ring orbit-ring-1">
+        <div class="orbit-item" style="transform:translateX(-50%) translateY(-50%) rotate(0deg) translateX(100px) rotate(0deg);top:50%;left:50%">React</div>
+        <div class="orbit-item" style="transform:translateX(-50%) translateY(-50%) rotate(90deg) translateX(100px) rotate(-90deg);top:50%;left:50%">Node.js</div>
+        <div class="orbit-item" style="transform:translateX(-50%) translateY(-50%) rotate(180deg) translateX(100px) rotate(-180deg);top:50%;left:50%">Python</div>
+        <div class="orbit-item" style="transform:translateX(-50%) translateY(-50%) rotate(270deg) translateX(100px) rotate(-270deg);top:50%;left:50%">FastAPI</div>
+      </div>
+      <div class="orbit-ring orbit-ring-2">
+        <div class="orbit-item" style="transform:translateX(-50%) translateY(-50%) rotate(0deg) translateX(160px) rotate(0deg);top:50%;left:50%">MongoDB</div>
+        <div class="orbit-item" style="transform:translateX(-50%) translateY(-50%) rotate(60deg) translateX(160px) rotate(-60deg);top:50%;left:50%">AWS</div>
+        <div class="orbit-item" style="transform:translateX(-50%) translateY(-50%) rotate(120deg) translateX(160px) rotate(-120deg);top:50%;left:50%">Next.js</div>
+        <div class="orbit-item" style="transform:translateX(-50%) translateY(-50%) rotate(180deg) translateX(160px) rotate(-180deg);top:50%;left:50%">PostgreSQL</div>
+        <div class="orbit-item" style="transform:translateX(-50%) translateY(-50%) rotate(240deg) translateX(160px) rotate(-240deg);top:50%;left:50%">TypeScript</div>
+        <div class="orbit-item" style="transform:translateX(-50%) translateY(-50%) rotate(300deg) translateX(160px) rotate(-300deg);top:50%;left:50%">Vercel</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG SECTION -->
+<section class="blog-section">
+  <div class="blog-header reveal">
+    <div class="blog-sub">06 — Notes</div>
+    <div class="blog-title-main">TECH<br>INSIGHTS</div>
+  </div>
+  <div class="blog-grid">
+    <article class="blog-card glass-card reveal">
+      <div class="blog-date">Mar 2026 · AI/ML</div>
+      <h3 class="blog-title">Why XGBoost for Epidemic Prediction?</h3>
+      <p class="blog-excerpt">Exploring the tradeoffs between model interpretability and accuracy in public health AI systems...</p>
+      <a href="#" class="blog-link">Read more <span>→</span></a>
+    </article>
+    <article class="blog-card glass-card reveal">
+      <div class="blog-date">Feb 2026 · Web Dev</div>
+      <h3 class="blog-title">Building Real-Time Apps with Convex</h3>
+      <p class="blog-excerpt">How we achieved sub-100ms sync for collaborative coding in TalknCode using Convex's reactive backend...</p>
+      <a href="#" class="blog-link">Read more <span>→</span></a>
+    </article>
+    <article class="blog-card glass-card reveal">
+      <div class="blog-date">Jan 2026 · Career</div>
+      <h3 class="blog-title">From Bangladesh to NIT: My Journey</h3>
+      <p class="blog-excerpt">Lessons learned navigating international education, scholarships, and building a tech career from scratch...</p>
+      <a href="#" class="blog-link">Read more <span>→</span></a>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT FORM SECTION - NEW -->
+<section class="contact-form-section" id="contact-form">
+  <div class="contact-form-header reveal">
+    <div class="testimonials-sub">Get In Touch</div>
+    <h2 class="contact-form-title">SEND A<br><span style="color:var(--lime)">MESSAGE</span></h2>
+    <p class="contact-form-sub">Have a project idea, job opportunity, or just want to connect? Fill out the form below and I'll get back to you within 24 hours.</p>
+  </div>
+  
+  <div class="contact-form-container glass-card reveal">
+    <div class="form-success" id="formSuccess">
+      ✓ Thank you! Your message has been sent successfully.
+    </div>
+    <form id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="name">Your Name</label>
+          <input type="text" id="name" name="name" class="form-input" required placeholder="Shakti Prosad Dey">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input type="email" id="email" name="email" class="form-input" required placeholder="your_email@gmail.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" class="form-input" required placeholder="Project Inquiry / Job Opportunity / Other">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="message">Your Message</label>
+        <textarea id="message" name="message" class="form-textarea" required placeholder="Tell me about your project or question..."></textarea>
+      </div>
+      <button type="submit" class="form-submit" id="formSubmit">
+        Send Message <span class="arr">↗</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT CTA SECTION -->
+<section class="contact" id="contact">
+  <div class="contact-left reveal">
+    <div class="contact-eyebrow">08 — Quick Connect</div>
+    <div class="contact-big">LET'S<br>BUILD<br>GREAT<br>THINGS.</div>
+    <p class="contact-sub">Open to SDE internships, full-time roles, and interesting collaborations. I respond fast.</p>
+  </div>
+  <div class="contact-right reveal">
+    <a href="mailto:shaktidey2023@gmail.com" class="contact-link">
+      <div class="contact-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <div class="contact-link-text">
+        <div class="contact-link-label">Email</div>
+        <div class="contact-link-value">shaktidey2023@gmail.com</div>
+      </div>
+      <div class="contact-link-arrow">↗</div>
+    </a>
+    <a href="https://github.com/Wrostdevil" target="_blank" class="contact-link">
+      <div class="contact-link-icon"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></div>
+      <div class="contact-link-text">
+        <div class="contact-link-label">GitHub</div>
+        <div class="contact-link-value">github.com/Wrostdevil</div>
+      </div>
+      <div class="contact-link-arrow">↗</div>
+    </a>
+    <a href="tel:+917908239341" class="contact-link">
+      <div class="contact-link-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91A16 16 0 0015.09 17.9l1.42-1.42a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+      <div class="contact-link-text">
+        <div class="contact-link-label">Phone · Jalandhar, India</div>
+        <div class="contact-link-value">+91 7908239341</div>
+      </div>
+      <div class="contact-link-arrow">↗</div>
+    </a>
+    <div style="margin-top:8px;padding:20px 28px;border:1px solid rgba(255,255,255,0.1);border-radius:4px;background:rgba(255,255,255,0.04)">
+      <div style="font-family:var(--ff-mono);font-size:10px;color:rgba(255,255,255,0.35);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:8px">Current Status</div>
+      <div style="display:flex;align-items:center;gap:10px;font-family:var(--ff-mono);font-size:12px;color:rgba(255,255,255,0.7)">
+        <span style="width:8px;height:8px;border-radius:50%;background:#C8FF00;animation:pulse 2s infinite;flex-shrink:0"></span>
+        Open to SDE internships & full-time roles
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">SPD</div>
+  <div class="footer-status"><span class="status-pulse"></span>Available for work</div>
+  <div class="footer-copy">© 2026 Shakti Prosad Dey</div>
+</footer>
+
+<!-- THEME TOGGLE -->
+<button class="theme-toggle magnetic" id="themeToggle" aria-label="Toggle theme">
+  <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+  </svg>
+</button>
+
+<script>
+// === LOADER ===
+const loaderName = document.getElementById('loader-name');
+const loaderFill = document.getElementById('loader-fill');
+const loaderPct = document.getElementById('loader-pct');
+const loader = document.getElementById('loader');
+const name = 'SHAKTI';
+let charIdx = 0, pct = 0;
+const nameInterval = setInterval(() => {
+  if(charIdx <= name.length){ loaderName.textContent = name.substring(0, charIdx++); }
+},80);
+const pctInterval = setInterval(() => {
+  pct = Math.min(pct + Math.random()*4, 100);
+  loaderFill.style.width = pct + '%';
+  loaderPct.textContent = Math.floor(pct) + '%';
+  if(pct >= 100){
+    clearInterval(pctInterval);
+    clearInterval(nameInterval);
+    setTimeout(() => { loader.classList.add('hidden'); startAnimations(); }, 300);
+  }
+},50);
+
+// === CURSOR ===
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursor-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; cursor.style.left=mx+'px'; cursor.style.top=my+'px'; });
+function animateRing(){
+  rx += (mx-rx)*0.1; ry += (my-ry)*0.1;
+  ring.style.left=rx+'px'; ring.style.top=ry+'px';
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+document.querySelectorAll('a,button,.project-row,.about-card,.contact-link,.skill-card,.github-badge,.form-input,.form-textarea,.form-submit').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.style.width='20px'; cursor.style.height='20px'; ring.style.width='60px'; ring.style.height='60px'; ring.style.borderColor='#C8FF00'; });
+  el.addEventListener('mouseleave', () => { cursor.style.width='12px'; cursor.style.height='12px'; ring.style.width='40px'; ring.style.height='40px'; ring.style.borderColor='#0A0A0F'; });
+});
+
+// === HERO CANVAS ===
+const canvas = document.getElementById('heroCanvas');
+const ctx = canvas.getContext('2d');
+let particles = [];
+function resizeCanvas(){ canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+for(let i=0;i<80;i++){
+  particles.push({ x: Math.random()*canvas.width, y: Math.random()*canvas.height, vx:(Math.random()-0.5)*0.3, vy:(Math.random()-0.5)*0.3, size: Math.random()*1.5+0.5, opacity: Math.random()*0.4+0.1 });
+}
+let mouseX=canvas.width/2, mouseY=canvas.height/2;
+canvas.addEventListener('mousemove', e => { const r=canvas.getBoundingClientRect(); mouseX=e.clientX-r.left; mouseY=e.clientY-r.top; });
+function drawParticles(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  particles.forEach((p,i) => {
+    const dx=mouseX-p.x, dy=mouseY-p.y, dist=Math.sqrt(dx*dx+dy*dy);
+    if(dist<120){ p.vx+=dx*0.0002; p.vy+=dy*0.0002; }
+    p.x+=p.vx; p.y+=p.vy;
+    p.vx*=0.99; p.vy*=0.99;
+    if(p.x<0) p.x=canvas.width; if(p.x>canvas.width) p.x=0;
+    if(p.y<0) p.y=canvas.height; if(p.y>canvas.height) p.y=0;
+    ctx.beginPath(); ctx.arc(p.x,p.y,p.size,0,Math.PI*2);
+    ctx.fillStyle=`rgba(10,10,15,${p.opacity})`; ctx.fill();
+    particles.forEach((p2,j) => {
+      if(j<=i) return;
+      const dx2=p.x-p2.x, dy2=p.y-p2.y, d=Math.sqrt(dx2*dx2+dy2*dy2);
+      if(d<100){ ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(p2.x,p2.y); ctx.strokeStyle=`rgba(10,10,15,${0.08*(1-d/100)})`; ctx.lineWidth=0.5; ctx.stroke(); }
+    });
+  });
+  requestAnimationFrame(drawParticles);
+}
+
+// === TYPING HERO ===
+function typeHero(){
+  const el = document.getElementById('typed-title');
+  const text = 'SHAKTI';
+  let i=0;
+  const t = setInterval(()=>{ el.textContent = text.substring(0,i++); if(i>text.length) clearInterval(t); },100);
+}
+
+// === COUNT UP ===
+function animateCounters(){
+  document.querySelectorAll('.count-up').forEach(el => {
+    const target = parseInt(el.dataset.target);
+    const dur = 1500;
+    const start = performance.now();
+    function update(now){
+      const p = Math.min((now-start)/dur,1);
+      const ease = 1-Math.pow(1-p,3);
+      el.textContent = Math.floor(ease*target);
+      if(p<1) requestAnimationFrame(update);
+      else el.textContent = target;
+    }
+    requestAnimationFrame(update);
+  });
+}
+
+// === SCROLL REVEAL & NAV ACTIVE ===
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach((e,i) => {
+    if(e.isIntersecting){ 
+      setTimeout(()=>e.target.classList.add('up'), i*100); 
+      revealObs.unobserve(e.target);
+      // Update nav active state
+      const id = e.target.id;
+      if(id){
+        document.querySelectorAll('.nav-links a').forEach(link => link.classList.remove('active'));
+        const navLink = document.querySelector(`.nav-links a[href="#${id}"]`);
+        if(navLink) navLink.classList.add('active');
+      }
+    }
+  });
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+// Counter observer
+const counterObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting){ animateCounters(); counterObs.disconnect(); } });
+},{threshold:0.5});
+const statBar = document.querySelector('.stat-bar');
+if(statBar) counterObs.observe(statBar);
+
+// === SKILLS FILTER ===
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.skill-card').forEach(card => {
+      if(filter==='all'||card.dataset.cat===filter){ 
+        card.style.display=''; card.style.opacity='1'; card.style.transform=''; 
+      }
+      else { card.style.opacity='0.3'; card.style.transform='scale(0.95)'; }
+    });
+  });
+});
+
+// === THEME TOGGLE ===
+const themes = ['dark', 'light', 'neon'];
+let currentTheme = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', currentTheme);
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+
+function updateThemeIcon(){
+  if(currentTheme === 'dark'){
+    themeIcon.innerHTML = '<circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>';
+  } else if(currentTheme === 'light'){
+    themeIcon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+  } else {
+    themeIcon.innerHTML = '<path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/><circle cx="12" cy="12" r="4"/>';
+  }
+}
+updateThemeIcon();
+
+themeToggle.addEventListener('click', () => {
+  const idx = themes.indexOf(currentTheme);
+  currentTheme = themes[(idx + 1) % themes.length];
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  localStorage.setItem('theme', currentTheme);
+  updateThemeIcon();
+  themeIcon.style.transform = 'rotate(180deg)';
+  setTimeout(() => themeIcon.style.transform = '', 300);
+});
+
+// === SCROLL PROGRESS ===
+const progressBar = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+  progressBar.style.transform = `scaleX(${scrolled / 100})`;
+});
+
+// === PROJECT CARD 3D HOVER ===
+document.querySelectorAll('.project-row.glass-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = (y - centerY) / 25;
+    const rotateY = (centerX - x) / 25;
+    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.01)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+  });
+});
+
+// === KEYBOARD NAVIGATION ===
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Tab') {
+    document.body.classList.add('keyboard-nav');
+  }
+});
+document.addEventListener('mousedown', () => {
+  document.body.classList.remove('keyboard-nav');
+});
+
+// === MOBILE NAV TOGGLE ===
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  // Animate toggle icon
+  const spans = navToggle.querySelectorAll('span');
+  if(navLinks.classList.contains('active')){
+    spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
+  } else {
+    spans[0].style.transform = '';
+    spans[1].style.opacity = '1';
+    spans[2].style.transform = '';
+  }
+});
+
+// Close nav when clicking a link (mobile)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    const spans = navToggle.querySelectorAll('span');
+    spans[0].style.transform = '';
+    spans[1].style.opacity = '1';
+    spans[2].style.transform = '';
+  });
+});
+
+// === CONTACT FORM HANDLING ===
+const contactForm = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+const formSubmit = document.getElementById('formSubmit');
+
+contactForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  // Show loading state
+  const originalText = formSubmit.innerHTML;
+  formSubmit.disabled = true;
+  formSubmit.innerHTML = 'Sending... <span class="arr">↗</span>';
+  
+  // Get form data
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    subject: document.getElementById('subject').value,
+    message: document.getElementById('message').value,
+    timestamp: new Date().toISOString()
+  };
+  
+  // Simulate API call (replace with actual endpoint)
+  try {
+    // For demo: log to console and show success
+    console.log('Form submitted:', formData);
+    
+    // Show success message
+    formSuccess.classList.add('show');
+    
+    // Reset form
+    contactForm.reset();
+    
+    // Hide success after 5 seconds
+    setTimeout(() => {
+      formSuccess.classList.remove('show');
+    }, 5000);
+    
+  } catch(error) {
+    console.error('Form error:', error);
+    alert('Something went wrong. Please try again or email me directly.');
+  } finally {
+    // Restore button
+    formSubmit.disabled = false;
+    formSubmit.innerHTML = originalText;
+  }
+});
+
+// === TESTIMONIAL AUTO-SCROLL ===
+const track = document.querySelector('.testimonial-track');
+if(track){
+  let isDown = false, startX, scrollLeft;
+  track.addEventListener('mousedown', (e) => { isDown = true; startX = e.pageX - track.offsetLeft; scrollLeft = track.scrollLeft; });
+  track.addEventListener('mouseleave', () => isDown = false);
+  track.addEventListener('mouseup', () => isDown = false);
+  track.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - track.offsetLeft;
+    const walk = (x - startX) * 2;
+    track.scrollLeft = scrollLeft - walk;
+  });
+}
+
+// === START ANIMATIONS ===
+function startAnimations(){
+  drawParticles();
+  typeHero();
+}
+
+// === SMOOTH SCROLL FOR ANCHOR LINKS ===
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if(target){
+      const headerOffset = 80;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
