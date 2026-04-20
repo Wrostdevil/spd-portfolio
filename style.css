@@ -506,7 +506,7 @@ footer { background:var(--ink); padding:24px 60px; display:flex; justify-content
   .projects-header { padding:0 40px; }
   .project-row { padding:0 40px; }
   .project-row.glass-card { margin:16px 40px; }
-  .proj-index { font-size:56px; }
+  .proj-index { font-size:60px; }
   .experience { padding:80px 40px; }
   .tools-section { padding:80px 40px; gap:60px; }
   .orbit-container { width:300px; height:300px; }
