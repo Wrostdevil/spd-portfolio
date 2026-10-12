@@ -343,10 +343,13 @@ z-index: 0;
 position: relative;
 z-index: 1;
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: minmax(0,1.12fr) minmax(0,0.88fr);
 gap: 40px;
-align-items: end;
+align-items: center;
+width: 100%;
 }
+img { max-width: 100%; }
+.hero-left { min-width: 0; }
 .hero-eyebrow {
 font-family: var(--ff-mono);
 font-size: 11px;
@@ -382,9 +385,47 @@ color: var(--lime);
 .hero-right {
 display: flex;
 flex-direction: column;
-justify-content: flex-end;
+justify-content: center;
 padding-bottom: 8px;
+min-width: 0;
 }
+.hero-photo-wrap {
+position: relative;
+width: clamp(200px,22vw,248px);
+aspect-ratio: 1 / 1;
+margin-bottom: 32px;
+flex-shrink: 0;
+}
+.hero-photo {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center 18%;
+border-radius: 50%;
+border: 3px solid var(--lime);
+display: block;
+background: var(--paper2);
+box-shadow: 0 0 0 7px var(--paper), 0 0 0 10px var(--lime), 0 24px 60px -12px rgba(0,0,0,0.4);
+transition: transform 0.35s ease;
+}
+.hero-photo-wrap:hover .hero-photo { transform: scale(1.03); }
+.hero-photo-dot {
+position: absolute;
+top: 14px;
+right: 14px;
+width: 18px;
+height: 18px;
+background: var(--lime);
+border: 4px solid var(--paper);
+border-radius: 50%;
+box-shadow: 0 0 0 1.5px var(--lime);
+}
+/* responsive safety — no desktop visual change */
+html, body { max-width: 100%; overflow-x: clip; }
+.hero, .stat-bar, .about, .skills, .projects, .experience, .certificates, .tools-section, .testimonials, .blog-section, .contact-form-section, .contact { width: 100%; max-width: 100%; }
+.hero-title { max-width: 100%; overflow-wrap: break-word; }
+.orbit-container { max-width: 82vw; }
+.proj-main, .proj-name, .proj-tags { min-width: 0; max-width: 100%; }
 .hero-desc {
 font-size: 19px;
 color: var(--muted);
@@ -1651,6 +1692,8 @@ transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bez
 @media (max-width:1200px) {
 nav { padding: 14px 40px; }
 .hero { padding: 130px 40px 56px; }
+.hero-content { gap: 32px; }
+.hero-photo-wrap { width: clamp(190px,24vw,220px); }
 .hero-title { font-size: clamp(60px, 9vw, 130px); }
 .stat-item { padding: 32px 24px; }
 .stat-num { font-size: 44px; }
@@ -1700,10 +1743,15 @@ z-index: 999;
 .nav-links a::after { display: none; }
 .nav-toggle { display: flex; }
 .hero { padding: 100px 20px 40px; min-height: auto; }
-.hero-content { grid-template-columns: 1fr; gap: 32px; }
+.hero-content { grid-template-columns: 1fr; gap: 32px; justify-items: center; text-align: center; }
+.hero-left { display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; }
+.hero-eyebrow { justify-content: center; }
+.hero-eyebrow::before { display: none; }
 .hero-title { font-size: clamp(56px, 14vw, 110px); }
-.hero-right { margin-top: 0; }
-.hero-desc { max-width: 100%; font-size: 16px; }
+.hero-right { margin-top: 0; align-items: center; text-align: center; width: 100%; max-width: 520px; margin-inline: auto; }
+.hero-photo-wrap { width: clamp(190px,52vw,230px); margin: 8px auto 24px; }
+.hero-desc { max-width: 100%; font-size: 16px; text-align: center; margin-inline: auto; }
+.hero-ctas { align-items: center; width: 100%; }
 .hero-scroll { margin-top: 36px; padding-top: 28px; }
 .btn-mag, .btn-ghost { max-width: 100%; }
 .marquee-item { font-size: 12px; padding: 0 24px; gap: 14px; }
@@ -1765,6 +1813,8 @@ html { cursor: auto; }
 }
 @media (max-width:640px) {
 .hero { padding: 88px 16px 32px; }
+.hero-content { gap: 28px; }
+.hero-photo-wrap { width: clamp(180px,55vw,210px); margin: 4px auto 22px; }
 .hero-title { font-size: clamp(48px, 16vw, 80px); }
 .hero-eyebrow { font-size: 10px; gap: 8px; }
 .hero-eyebrow::before { width: 18px; }
@@ -1837,6 +1887,9 @@ footer { padding: 16px; gap: 8px; }
 nav { padding: 12px 14px; }
 .nav-logo { font-size: 20px; }
 .hero { padding: 80px 14px 28px; }
+.hero-content { gap: 24px; }
+.hero-photo-wrap { width: clamp(170px,58vw,190px); margin: 2px auto 20px; }
+.hero-photo { border-width: 2.5px; box-shadow: 0 0 0 5px var(--paper), 0 0 0 7.5px var(--lime), 0 16px 40px -12px rgba(0,0,0,0.4); }
 .hero-title { font-size: clamp(40px, 17vw, 68px); }
 .hero-desc { font-size: 14px; }
 .stat-bar { grid-template-columns: 1fr; }
@@ -1971,7 +2024,8 @@ html[data-theme="dark"] .nav-links a { color: rgba(255, 255, 255, 0.78); }
   <nav aria-label="Primary">
     <div class="nav-logo magnetic">SPD</div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Work</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -2003,6 +2057,10 @@ html[data-theme="dark"] .nav-links a { color: rgba(255, 255, 255, 0.78); }
         </h1>
       </div>
       <div class="hero-right">
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="my-image.png" alt="Portrait of Shakti Prosad Dey" width="296" height="296" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='assets/my-image.png'">
+          <span class="hero-photo-dot" aria-hidden="true"></span>
+        </div>
         <p class="hero-desc">Aspiring <strong>Software Development Engineer</strong> building scalable systems, elegant APIs, and AI-powered applications that solve real problems.</p>
         <div class="hero-ctas">
           <a href="#projects" class="btn-mag magnetic">View My Work <span class="arr">↗</span></a>
@@ -2713,7 +2771,7 @@ html[data-theme="dark"] .nav-links a { color: rgba(255, 255, 255, 0.78); }
         }
       });
     }, { rootMargin: '-40% 0px -55% 0px' });
-    ['about', 'skills', 'projects', 'experience', 'certificates', 'contact-form'].forEach(function (id) {
+    ['home', 'about', 'skills', 'projects', 'experience', 'certificates', 'contact-form'].forEach(function (id) {
       var s = document.getElementById(id);
       if (s) spy.observe(s);
     });
