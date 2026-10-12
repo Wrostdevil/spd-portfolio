@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="sBlue" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#0A2EB8"/>
+      <stop offset="38%" stop-color="#1E90FF"/>
+      <stop offset="68%" stop-color="#00CFFF"/>
+      <stop offset="100%" stop-color="#0A3DCC"/>
+    </linearGradient>
+  </defs>
+  <!-- outer ring like your reference -->
+  <circle cx="32" cy="32" r="31" fill="#111111"/>
+  <circle cx="32" cy="32" r="27" fill="#ffffff"/>
+  <!-- stylized S -->
+  <text x="32" y="47" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" font-size="42" letter-spacing="-1" fill="url(#sBlue)">S</text>
+  <!-- glossy highlight -->
+  <circle cx="40" cy="24" r="4.5" fill="white" opacity="0.9"/>
+  <circle cx="40" cy="24" r="7.5" fill="white" opacity="0.25"/>
+  <!-- ground shadow -->
+  <ellipse cx="32" cy="53" rx="14" ry="1.6" fill="#0A3DCC" opacity="0.18"/>
+</svg>
